@@ -72,28 +72,6 @@ export function SkillsSection() {
               />
             ))}
           </div>
-
-          {/* Category Legend */}
-          <div className="flex flex-wrap justify-center gap-8 text-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-primary rounded-full" />
-              <span className="text-muted-foreground font-mono">
-                {skillsData.languages.length} Lenguajes de programación
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-secondary rounded-full" />
-              <span className="text-muted-foreground font-mono">
-                {skillsData.webDev.length} Tecnologías web
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-primary rounded-full" />
-              <span className="text-muted-foreground font-mono">
-                {skillsData.databases.length} Bases de datos
-              </span>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

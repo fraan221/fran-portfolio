@@ -24,14 +24,15 @@ export function AboutSection() {
                 Objetivo laboral
               </span>
               <h2 className="text-4xl md:text-5xl font-bold leading-tight text-balance">
-                Construyendo el futuro.
+                Construyendo el futuro
               </h2>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
               Técnico en programación, con búsqueda activa de oportunidad
-              laboral y con conocimientos sólidos en programación. Apasionado
-              por crear soluciones eficientes y escalables, y por aprender
-              continuamente nuevas tecnologías.
+              laboral y con conocimientos sólidos en programación.
+              <br />
+              Apasionado por crear soluciones eficientes y escalables, y por
+              aprender continuamente nuevas tecnologías.
             </p>
             <div className="flex items-center gap-3 pt-4">
               <div className="h-px flex-1 bg-linear-to-r from-primary to-transparent" />
@@ -55,7 +56,7 @@ export function AboutSection() {
             <div className="p-6 bg-card border border-border rounded-lg hover:border-primary transition-colors group">
               <div className="space-y-2">
                 <div className="text-4xl font-bold text-primary group-hover:scale-110 transition-transform">
-                  10+
+                  +10
                 </div>
                 <div className="text-sm text-muted-foreground">
                   Tecnologías conocidas
@@ -74,7 +75,7 @@ export function AboutSection() {
             </div>
             <div className="p-6 bg-card border border-border rounded-lg hover:border-primary transition-colors group col-span-2">
               <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary group-hover:scale-110 transition-transform">
+                <div className="text-4xl font-bold text-primary group-hover:scale-105 transition-transform">
                   5 años
                 </div>
                 <div className="text-sm text-muted-foreground">

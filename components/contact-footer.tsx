@@ -1,23 +1,23 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Mail, Phone, Check, Copy } from 'lucide-react'
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Mail, Phone, Check, Copy } from "lucide-react";
 
 export function ContactFooter() {
-  const [copiedEmail, setCopiedEmail] = useState(false)
-  const [copiedPhone, setCopiedPhone] = useState(false)
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const [copiedPhone, setCopiedPhone] = useState(false);
 
-  const copyToClipboard = (text: string, type: 'email' | 'phone') => {
-    navigator.clipboard.writeText(text)
-    if (type === 'email') {
-      setCopiedEmail(true)
-      setTimeout(() => setCopiedEmail(false), 2000)
+  const copyToClipboard = (text: string, type: "email" | "phone") => {
+    navigator.clipboard.writeText(text);
+    if (type === "email") {
+      setCopiedEmail(true);
+      setTimeout(() => setCopiedEmail(false), 2000);
     } else {
-      setCopiedPhone(true)
-      setTimeout(() => setCopiedPhone(false), 2000)
+      setCopiedPhone(true);
+      setTimeout(() => setCopiedPhone(false), 2000);
     }
-  }
+  };
 
   return (
     <footer id="contact" className="relative py-32 px-4 border-t border-border">
@@ -32,10 +32,12 @@ export function ContactFooter() {
             className="text-center space-y-6"
           >
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-balance">
-              Let&apos;s work together
+              ¡Hablemos!
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Currently seeking new opportunities. Feel free to reach out if you&apos;d like to collaborate.
+              Actualmente estoy buscando nuevas oportunidades.
+              <br />
+              No dudes en contactarme si queres que trabajemos juntos.
             </p>
           </motion.div>
 
@@ -55,14 +57,16 @@ export function ContactFooter() {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <button
-                    onClick={() => copyToClipboard('franhe345@gmail.com', 'email')}
-                    className="p-2 hover:bg-background rounded-md transition-colors"
+                    onClick={() =>
+                      copyToClipboard("franhe345@gmail.com", "email")
+                    }
+                    className="transition-colors cursor-pointer"
                     aria-label="Copy email"
                   >
                     {copiedEmail ? (
                       <Check className="w-4 h-4 text-primary" />
                     ) : (
-                      <Copy className="w-4 h-4 text-muted-foreground" />
+                      <Copy className="w-4 h-4 text-primary" />
                     )}
                   </button>
                 </div>
@@ -86,14 +90,14 @@ export function ContactFooter() {
                     <Phone className="w-6 h-6 text-secondary" />
                   </div>
                   <button
-                    onClick={() => copyToClipboard('+5491160542164', 'phone')}
-                    className="p-2 hover:bg-background rounded-md transition-colors"
+                    onClick={() => copyToClipboard("+5491160542164", "phone")}
+                    className="transition-colors cursor-pointer"
                     aria-label="Copy phone"
                   >
                     {copiedPhone ? (
                       <Check className="w-4 h-4 text-secondary" />
                     ) : (
-                      <Copy className="w-4 h-4 text-muted-foreground" />
+                      <Copy className="w-4 h-4 text-secondary" />
                     )}
                   </button>
                 </div>
@@ -116,16 +120,16 @@ export function ContactFooter() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="pt-16 border-t border-border"
+            className="pt-12 border-t border-border"
           >
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-sm text-muted-foreground">
-                © 2025 Franco Damian Herrera. All rights reserved.
+                © 2025 Franco Damian Herrera.
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 <span className="text-sm text-muted-foreground font-mono">
-                  Available for opportunities
+                  Disponible
                 </span>
               </div>
             </div>
@@ -133,5 +137,5 @@ export function ContactFooter() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
