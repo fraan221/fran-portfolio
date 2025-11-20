@@ -9,7 +9,8 @@ const projects = [
   {
     title: "Fatsy",
     role: "Co-Founder & Frontend Developer",
-    description: "Software para la gestión de restaurantes y delivery",
+    description:
+      "Plataforma integral para la gestión de restaurantes, pedidos y entregas a domicilio",
     technologies: [
       "Vue.js",
       "TypeScript",
@@ -22,7 +23,8 @@ const projects = [
   {
     title: "Turnix",
     role: "Founder & Fullstack Developer",
-    description: "SAAS para la gestión de barberías",
+    description:
+      "Sistema SaaS completo para administración, reservas y flujo de trabajo en barberías",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -55,7 +57,7 @@ export function ExperienceSection() {
           {/* Header */}
           <div className="space-y-4">
             <span className="text-sm font-mono text-secondary uppercase tracking-wider">
-              Experiencia laboral
+              Experiencia Profesional
             </span>
             <h2 className="text-5xl md:text-6xl font-bold text-balance">
               Proyectos Destacados

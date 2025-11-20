@@ -21,18 +21,17 @@ export function AboutSection() {
           >
             <div className="space-y-2">
               <span className="text-sm font-mono text-primary uppercase tracking-wider">
-                Objetivo laboral
+                Sobre mí
               </span>
               <h2 className="text-4xl md:text-5xl font-bold leading-tight text-balance">
-                Construyendo el futuro
+                Creando Soluciones Digitales
               </h2>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-              Técnico en programación, con búsqueda activa de oportunidad
-              laboral y con conocimientos sólidos en programación.
-              <br />
-              Apasionado por crear soluciones eficientes y escalables, y por
-              aprender continuamente nuevas tecnologías.
+              Desarrollador con sólida formación técnica y pasión por
+              transformar ideas en productos digitales funcionales. Enfocado en
+              escribir código limpio, escalable y en mantenerme actualizado con
+              las últimas tecnologías del mercado.
             </p>
             <div className="flex items-center gap-3 pt-4">
               <div className="h-px flex-1 bg-linear-to-r from-primary to-transparent" />
@@ -59,7 +58,7 @@ export function AboutSection() {
                   +10
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Tecnologías conocidas
+                  Tecnologías Dominadas
                 </div>
               </div>
             </div>
@@ -69,7 +68,7 @@ export function AboutSection() {
                   2
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Proyectos personales activos
+                  Proyectos Activos
                 </div>
               </div>
             </div>
@@ -79,7 +78,7 @@ export function AboutSection() {
                   5 años
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  De experiencia, aprendiendo y practicando continuamente
+                  De Experiencia en Desarrollo
                 </div>
               </div>
             </div>

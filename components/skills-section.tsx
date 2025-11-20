@@ -55,10 +55,10 @@ export function SkillsSection() {
           {/* Header */}
           <div className="space-y-4">
             <span className="text-sm font-mono text-primary uppercase tracking-wider">
-              Conocimientos técnicos
+              Stack Tecnológico
             </span>
             <h2 className="text-5xl md:text-6xl font-bold text-balance">
-              Habilidades y Tecnologías
+              Tecnologías & Herramientas
             </h2>
           </div>
 

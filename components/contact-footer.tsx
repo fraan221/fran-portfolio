@@ -32,12 +32,12 @@ export function ContactFooter() {
             className="text-center space-y-6"
           >
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-balance">
-              ¡Hablemos!
+              ¿Trabajamos Juntos?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Actualmente estoy buscando nuevas oportunidades.
-              <br />
-              No dudes en contactarme si queres que trabajemos juntos.
+              Estoy disponible para nuevos proyectos y colaboraciones. Si tienes
+              una idea o necesitas un desarrollador comprometido, me encantaría
+              conocer más sobre tu proyecto.
             </p>
           </motion.div>
 
@@ -71,7 +71,9 @@ export function ContactFooter() {
                   </button>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-sm text-muted-foreground">Email</p>
+                  <p className="text-sm text-muted-foreground">
+                    Correo Electrónico
+                  </p>
                   <a
                     href="mailto:franhe345@gmail.com"
                     className="text-lg font-mono group-hover:text-primary transition-colors break-all"
@@ -102,7 +104,7 @@ export function ContactFooter() {
                   </button>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-sm text-muted-foreground">Phone</p>
+                  <p className="text-sm text-muted-foreground">Teléfono</p>
                   <a
                     href="tel:+5491160542164"
                     className="text-lg font-mono group-hover:text-secondary transition-colors"
@@ -124,12 +126,12 @@ export function ContactFooter() {
           >
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-sm text-muted-foreground">
-                © 2025 Franco Damian Herrera.
+                © 2025 Franco Damian Herrera. Todos los derechos reservados.
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 <span className="text-sm text-muted-foreground font-mono">
-                  Disponible
+                  Disponible para Proyectos
                 </span>
               </div>
             </div>

@@ -21,7 +21,7 @@ export function HeroSection() {
             >
               <div className="flex items-center gap-4 flex-wrap">
                 <span className="text-primary font-mono text-sm uppercase tracking-wider">
-                  Abierto a nuevas oportunidades
+                  Disponible para colaborar
                 </span>
                 <span className="px-3 py-1 bg-primary/10 border border-primary rounded-full text-primary text-sm font-mono">
                   22 años
@@ -40,7 +40,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-2xl md:text-3xl text-muted-foreground font-mono">
-                Técnico en Programación
+                Desarrollador Full Stack
               </p>
             </motion.div>
 
@@ -54,13 +54,13 @@ export function HeroSection() {
                 href="#contact"
                 className="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-md hover:bg-primary/90 transition-colors"
               >
-                Hablemos
+                Iniciar Conversación
               </a>
               <a
                 href="#experience"
                 className="px-8 py-4 border border-border text-foreground font-semibold rounded-md hover:bg-card transition-colors"
               >
-                Experiencia
+                Ver Trayectoria
               </a>
             </motion.div>
           </div>
@@ -104,7 +104,7 @@ export function HeroSection() {
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
                 <span className="text-sm text-muted-foreground">
-                  Dominio de Inglés
+                  Inglés Profesional
                 </span>
               </div>
             </div>

@@ -60,10 +60,10 @@ export function EducationSection() {
           {/* Header */}
           <div className="space-y-4">
             <span className="text-sm font-mono text-primary uppercase tracking-wider">
-              Trasfondo académico
+              Formación Académica
             </span>
             <h2 className="text-5xl md:text-6xl font-bold text-balance">
-              Educación formal y Cursos
+              Educación & Certificaciones
             </h2>
           </div>
 
