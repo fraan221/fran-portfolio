@@ -54,7 +54,6 @@ export function ExperienceSection() {
           transition={{ duration: 0.6 }}
           className="space-y-16"
         >
-          {/* Header */}
           <div className="space-y-4">
             <span className="text-sm font-mono text-secondary uppercase tracking-wider">
               Experiencia Profesional
@@ -64,7 +63,6 @@ export function ExperienceSection() {
             </h2>
           </div>
 
-          {/* Projects grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <motion.div
@@ -75,7 +73,6 @@ export function ExperienceSection() {
                 className="group relative"
               >
                 <div className="h-full p-8 bg-card border border-border rounded-lg hover:border-secondary transition-all duration-300 space-y-6">
-                  {/* Header */}
                   <div className="space-y-2">
                     <div className="flex items-start justify-between gap-4">
                       <h3 className="text-3xl font-bold group-hover:text-secondary transition-colors">
@@ -90,12 +87,10 @@ export function ExperienceSection() {
                     </p>
                   </div>
 
-                  {/* Description */}
                   <p className="text-lg text-muted-foreground">
                     {project.description}
                   </p>
 
-                  {/* Technologies */}
                   <div className="flex flex-wrap gap-2 pt-4">
                     {project.technologies.map((tech) => (
                       <span

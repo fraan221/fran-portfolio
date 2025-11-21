@@ -52,7 +52,6 @@ export function SkillsSection() {
           transition={{ duration: 0.6 }}
           className="space-y-16"
         >
-          {/* Header */}
           <div className="space-y-4">
             <span className="text-sm font-mono text-primary uppercase tracking-wider">
               Stack Tecnológico

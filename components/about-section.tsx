@@ -12,7 +12,6 @@ export function AboutSection() {
     <section ref={ref} className="relative py-32 px-4 border-t border-border">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Left: Objective */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -45,7 +44,6 @@ export function AboutSection() {
             </p>
           </motion.div>
 
-          {/* Right: Quick stats */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

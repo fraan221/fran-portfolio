@@ -57,7 +57,6 @@ export function EducationSection() {
           transition={{ duration: 0.6 }}
           className="space-y-16"
         >
-          {/* Header */}
           <div className="space-y-4">
             <span className="text-sm font-mono text-primary uppercase tracking-wider">
               Formación Académica
@@ -67,9 +66,7 @@ export function EducationSection() {
             </h2>
           </div>
 
-          {/* Timeline */}
           <div className="relative">
-            {/* Vertical line */}
             <div className="absolute left-0 top-0 bottom-0 w-px bg-primary md:left-1/2" />
 
             <div className="space-y-12">
@@ -83,7 +80,6 @@ export function EducationSection() {
                     index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
                 >
-                  {/* Timeline dot */}
                   <div className="absolute left-0 md:left-1/2 -translate-x-1/2">
                     <div
                       className={`w-4 h-4 rounded-full border-2 ${
@@ -94,7 +90,6 @@ export function EducationSection() {
                     />
                   </div>
 
-                  {/* Content */}
                   <div
                     className={`flex-1 ${
                       index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"
@@ -129,7 +124,6 @@ export function EducationSection() {
                     </div>
                   </div>
 
-                  {/* Spacer for alternating layout */}
                   <div className="hidden md:block flex-1" />
                 </motion.div>
               ))}

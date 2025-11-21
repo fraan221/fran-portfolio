@@ -23,7 +23,6 @@ export function ContactFooter() {
     <footer id="contact" className="relative py-32 px-4 border-t border-border">
       <div className="max-w-7xl mx-auto">
         <div className="space-y-16">
-          {/* Main CTA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +30,7 @@ export function ContactFooter() {
             transition={{ duration: 0.6 }}
             className="text-center space-y-6"
           >
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-balance">
+            <h2 className="text-5xl md :text-6xl lg:text-7xl font-bold text-balance">
               ¿Trabajamos Juntos?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
@@ -41,7 +40,6 @@ export function ContactFooter() {
             </p>
           </motion.div>
 
-          {/* Contact cards */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +47,6 @@ export function ContactFooter() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto"
           >
-            {/* Email */}
             <div className="group relative p-8 bg-card border border-border rounded-lg hover:border-primary transition-colors">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
@@ -84,7 +81,6 @@ export function ContactFooter() {
               </div>
             </div>
 
-            {/* Phone */}
             <div className="group relative p-8 bg-card border border-border rounded-lg hover:border-secondary transition-colors">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
@@ -116,7 +112,6 @@ export function ContactFooter() {
             </div>
           </motion.div>
 
-          {/* Footer bottom */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

@@ -29,7 +29,6 @@ export function TechIcon({ name, icon, index }: TechIconProps) {
         </div>
       </div>
 
-      {/* Tooltip */}
       <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-foreground text-background text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-10">
         {name}
         <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground" />
