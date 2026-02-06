@@ -12,26 +12,28 @@ interface TechIconProps {
 export function TechIcon({ name, icon, index }: TechIconProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.05, ease: "backOut" }}
       className="group relative"
     >
-      <div className="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-xl bg-card border border-border transition-all duration-200 hover:border-primary hover:scale-110 hover:shadow-[0_0_24px_rgba(0,240,255,0.3)] cursor-default backdrop-blur-sm">
-        <div className="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-white/95 rounded-xl" />
-        <div className="relative w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 transition-transform duration-200 group-hover:rotate-6 z-10">
+      <div className="relative flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl glass-card transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_-5px_theme('colors.primary.DEFAULT/30%')] hover:border-primary/40 cursor-default">
+        <div className="relative w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110 z-10 grayscale group-hover:grayscale-0 brightness-125 group-hover:brightness-100">
           <Image
             src={`/icons/${icon}.svg`}
             alt={`${name} icon`}
             fill
-            className="object-contain"
+            className="object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
           />
         </div>
+        
+        {/* Hover Glow */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
       </div>
 
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2 px-3 py-1.5 bg-foreground text-background text-xs font-medium rounded-md opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-10">
+      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-3 py-1 bg-card border border-border text-foreground text-[10px] font-mono tracking-wider uppercase rounded-full opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 whitespace-nowrap pointer-events-none z-20 shadow-lg">
         {name}
-        <div className="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground" />
       </div>
     </motion.div>
   );

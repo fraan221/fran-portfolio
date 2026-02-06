@@ -43,25 +43,25 @@ export function SkillsSection() {
     <section
       id="skills"
       ref={ref}
-      className="relative py-32 px-4 border-t border-border"
+      className="relative py-40 px-4"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="space-y-16"
+          transition={{ duration: 0.8 }}
+          className="space-y-20"
         >
-          <div className="space-y-4">
-            <span className="text-sm font-mono text-primary uppercase tracking-wider">
-              Stack Tecnológico
+          <div className="space-y-6 text-center">
+            <span className="text-xs font-mono text-primary uppercase tracking-[0.2em]">
+              Arsenal Técnico
             </span>
-            <h2 className="text-5xl md:text-6xl font-bold text-balance">
+            <h2 className="text-4xl md:text-5xl font-bold text-balance bg-clip-text text-transparent bg-linear-to-b from-foreground to-foreground/70">
               Tecnologías & Herramientas
             </h2>
           </div>
 
-          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 lg:gap-8">
+          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:gap-10 p-8 glass rounded-3xl border-white/5 bg-black/20">
             {allSkills.map((skill, index) => (
               <TechIcon
                 key={skill.icon}
